@@ -20,13 +20,13 @@ def run_ml():
     age = st.number_input('나이 입력', min_value= 18, max_value= 120, value= 25)
     
     st.text('연봉을 입력하세요')
-    salary = st.number_input('연봉 입력', min_value= 10000, value= 50000, step= 1000)
+    salary = st.number_input('연봉, 입력 기준은 $ ', min_value= 10000, value= 50000, step= 1000)
     
     st.text('카드빚을 입력하세요')
-    debt = st.number_input('카드빚 입력', min_value= 0, value= 0, step= 100)
+    debt = st.number_input('카드빚, 입력 기준은 $ ', min_value= 0, value= 0, step= 100)
     
     st.text('자산을 입력하세요')
-    worth = st.number_input('자산 입력', min_value= 5000, value= 20000, step= 1000)
+    worth = st.number_input('자산, 입력 기준은 $ ', min_value= 5000, value= 20000, step= 1000)
     
     
     st.subheader('버튼을 누르면 예측합니다.')
@@ -56,4 +56,4 @@ def run_ml():
         #print(y_pred)
         
         
-        st.text(f'위의 데이터로 예측되는 자동차 구매가능 예상 금액은 {y_pred}달러 입니다')
+        st.text(f'위의 데이터로 예측되는 자동차 구매가능 예상 금액은 ${y_pred} 입니다')
