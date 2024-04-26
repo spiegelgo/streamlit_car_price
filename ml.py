@@ -17,7 +17,7 @@ def run_ml():
         gender = 0
     
     st.text('나이를 입력하세요')
-    age = st.number_input('나이 입력', min_value= 18, max_value= 120, value= 25)
+    age = st.number_input('나이, 입력 기준은 만 나이', min_value= 18, max_value= 120, value= 25)
     
     st.text('연봉을 입력하세요')
     salary = st.number_input('연봉, 입력 기준은 $ ', min_value= 10000, value= 50000, step= 1000)
@@ -47,7 +47,7 @@ def run_ml():
         y_pred = regressor.predict(new_data)
 
         
-        # 위의 데이터로 예측한 자동차 구매가능 금액은 7,588달러 입니다. 출력
+        # 위의 데이터로 예측한 자동차 구매가능 금액은 $7,588 입니다. 출력
         y_pred = y_pred[0] # 숫자만 가져오기
         #print(y_pred)
         y_pred = round(y_pred) # 소수점 반올림 처리
