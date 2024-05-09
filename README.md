@@ -1,4 +1,5 @@
 # streamlit_car_price
+[만들어진 웹 사이트](http://ec2-3-39-253-5.ap-northeast-2.compute.amazonaws.com:8501)<br/><br/>
 
 주피터 노트북으로 Car_Purchasing_Data.csv 파일을 분석하여, 자동차 구매 금액을 예측하는 머신러닝을 수행합니다.<br/><br/>
 
